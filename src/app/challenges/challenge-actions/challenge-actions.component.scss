@@ -1,0 +1,54 @@
+@import '../../../theme/colors';
+
+FlexboxLayout {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: 300;
+}
+
+.btn-success {
+    background-color: $success;
+    border-color: $success;
+    color: $white;
+    border-width: 1;
+}
+
+.btn-fail {
+    background-color: $fail;
+    border-color: $fail;
+    color: $white;
+    border-width: 1;
+}
+
+.btn-success:disabled,
+.btn-fail:disabled {
+    background-color: #cccccc;
+    color: #777777;
+    border-color: #cccccc;
+}
+
+.btn-alt {
+    font-size: 30;
+    margin-top: 15;
+}
+
+.animate-button {
+    animation-name: slide-up;
+    animation-iteration-count: 1;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(30);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}

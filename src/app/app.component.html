@@ -1,0 +1,21 @@
+<!-- <FlexboxLayout flexDirection="column">
+    <ns-challenge-edit (input)="onChallengeInput($event)"></ns-challenge-edit>
+    <ns-current-challenge [challengeTitle]="activeChallenge"></ns-current-challenge>
+</FlexboxLayout> -->
+
+<!-- 
+<StackLayout>
+    <ns-absolute></ns-absolute>
+</StackLayout> -->
+
+<RadSideDrawer>
+    <FlexboxLayout tkDrawerContent
+                   class="drawer-container">
+        <Button text="Logout"
+                class="btn btn-primary btn-rounded-lg"
+                (tap)="onLogout()"></Button>
+    </FlexboxLayout>
+    <StackLayout tkMainContent>
+        <page-router-outlet></page-router-outlet>
+    </StackLayout>
+</RadSideDrawer>

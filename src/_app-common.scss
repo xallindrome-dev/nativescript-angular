@@ -1,0 +1,103 @@
+@import "~@nativescript/theme/core";
+@import "~@nativescript/theme/purple";
+@import "./theme/_colors";
+
+$btn-color: $primary;
+
+ActionBar {
+    background: $primary;
+    color: white;
+}
+
+.form {
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1 {
+    font-weight: bold;
+    color: $primary;
+    font-family: 'OswaldRegular', 'OswaldBold';
+}
+
+.form {
+    .input-field {
+        width: 80%;
+
+        .label {
+            color: $primary;
+            font-weight: bold;
+            font-family: 'OswaldRegular', 'OswaldBold';
+        }
+
+        .label.invalid {
+            color: red;
+        }
+
+        .input {
+            border-bottom-width: 2;
+            border-bottom-color: $primary;
+            width: 100%;
+            color: black;
+        }
+
+        .input.ng-invalid.ng-touched {
+            border-bottom-color: red;
+            color: red;
+        }
+    }
+}
+
+.drawer-container {
+    background: linear-gradient(140deg, #2b0c72, #5c3fa0);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20;
+
+    .btn {
+        width: 80%;
+        font-size: 24;
+        height: 70;
+    }
+}
+
+.btn-flat {
+    background: transparent;
+    border-color: transparent;
+    border-width: 1;
+    color: $primary;
+}
+
+.btn-primary {
+    background: $primary;
+    border-color: $primary;
+    border-width: 1;
+    color: $white;
+}
+
+.fa {
+    font-family: 'FontAwesome';
+}
+
+.m-t-4 {
+    margin-top: 4;
+}
+
+// .btn {
+//     border-width: 1;
+//     border-color: #7c015d;
+//     width: 100%;
+//     padding: 5 10;
+//     border-radius: 30%;
+//     margin: 5 0;
+// }
+
+// .form-control {
+//     border-bottom-color: #7c015d;
+//     border-bottom-width: 2;
+//     margin: 40 0 0 0;
+//     font-size: 20;
+//     padding: 8 4;
+// }
